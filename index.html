@@ -49,11 +49,11 @@
     .invite-banner p { font-size:0.95rem; color:#f5d0de; letter-spacing:0.5px; line-height:1.5; }
 
     /* ORARIO STRIP */
-    .orario-strip { background:#080f0e; border-top:1px solid #1a2a28; border-bottom:1px solid #1a2a28; padding:1.3rem 2rem; display:flex; justify-content:center; align-items:center; gap:1.2rem; flex-wrap:wrap; }
+    .orario-strip { background:#080f0e; border-top:1px solid #1a2a28; border-bottom:1px solid #1a2a28; padding:1.3rem 2rem; display:flex; justify-content:center; align-items:center; gap:0.8rem 2rem; flex-wrap:wrap; }
     .or-pill { display:flex; align-items:center; gap:8px; font-size:0.95rem; color:#aaccc8; }
     .or-dot { width:6px; height:6px; border-radius:50%; background:#3DBFB8; flex-shrink:0; }
     .or-pill span { color:#ffffff; font-weight:600; }
-    .or-sep { color:#3DBFB8; font-size:1.2rem; opacity:0.5; }
+    .or-sep { color:#3DBFB8; font-size:1.2rem; opacity:0.5; } @media (max-width:520px) { .or-sep { display:none; } .orario-strip { flex-direction:column; align-items:flex-start; padding:1.3rem 2rem; gap:0.7rem; } }
 
     /* PROGRAMMA */
     .prog-section { padding:3rem 1.5rem; max-width:680px; margin:0 auto; }
@@ -146,7 +146,7 @@
 
   <section class="prog-section">
     <div class="sec-eyebrow">Programma della serata</div>
-    <div class="prog-card">
+    <div class="prog-card accent">
       <div class="pc-top">
         <div class="pc-time"><div class="pc-time-h">18</div><div class="pc-time-m">ore</div></div>
         <div class="pc-body">
